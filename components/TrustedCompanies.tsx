@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-const brands= [
+const brands = [
   "/images/brands/lava.png",
   "/images/brands/cipla.png",
   "/images/brands/mahindra.png",
@@ -32,13 +32,11 @@ export default function BrandSection() {
           </p>
         </div>
 
-        <Swiper 
+        <Swiper
           modules={[Autoplay]}
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-            
           }}
           loop
           spaceBetween={30}

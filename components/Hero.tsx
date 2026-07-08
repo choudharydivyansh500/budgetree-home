@@ -10,11 +10,11 @@ export default function Hero() {
 
       {/* Background Glow */}
 
-      <div className="absolute -top-40 left-0 h-[420px] w-[420px] rounded-full bg-blue-600/20 blur-[170px]" />
+      <div className="absolute -top-40 left-0 h-105 w-105 rounded-full bg-blue-600/20 blur-[170px]" />
 
-      <div className="absolute right-0 top-20 h-[450px] w-[450px] rounded-full bg-cyan-500/15 blur-[180px]" />
+      <div className="absolute right-0 top-20 h-112.5 w-112.5 rounded-full bg-cyan-500/15 blur-[180px]" />
 
-      <div className="absolute left-1/2 bottom-0 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[170px]" />
+      <div className="absolute left-1/2 bottom-0 h-87.5 w-87.5 -translate-x-1/2 rounded-full bg-blue-500/10 blur-[170px]" />
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
 
@@ -39,7 +39,7 @@ export default function Hero() {
           Power modern growth
           <br />
 
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-blue-400 via-cyan-300 to-sky-400 bg-clip-text text-transparent">
 
             with Loyalty
 
@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-5">
 
-          <button className="group rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-[0_0_45px_rgba(59,130,246,.35)] transition duration-300 hover:scale-105">
+          <button className="group rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-[0_0_45px_rgba(59,130,246,.35)] transition duration-300 hover:scale-105">
 
             <span className="flex items-center gap-3">
 
@@ -110,7 +110,7 @@ export default function Hero() {
 
         {/* Stats */}
 
-        <div className="mt-20 grid w-full max-w-5xl gap-6 rounded-[32px] border border-slate-800 bg-slate-900/40 p-8 backdrop-blur-xl md:grid-cols-3">
+        <div className="mt-20 grid w-full max-w-5xl gap-6 rounded-4xl border border-slate-800 bg-slate-900/40 p-8 backdrop-blur-xl md:grid-cols-3">
 
           <div>
 

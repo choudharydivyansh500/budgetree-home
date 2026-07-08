@@ -49,7 +49,7 @@ export default function Services() {
 
       <div className="absolute left-0 top-20 h-96 w-96 rounded-full bg-blue-600/10 blur-[140px]" />
 
-      <div className="absolute right-0 bottom-0 h-[420px] w-[420px] rounded-full bg-cyan-500/10 blur-[170px]" />
+      <div className="absolute right-0 bottom-0 h-105 w-105 rounded-full bg-cyan-500/10 blur-[170px]" />
 
       <div className="container relative z-10">
 
@@ -64,7 +64,7 @@ export default function Services() {
           <h2 className="mt-8 text-5xl font-black text-white lg:text-6xl">
 
             Everything You Need To
-            <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
 
               Scale Your Business
 
@@ -91,7 +91,7 @@ export default function Services() {
               className="group rounded-[30px] border border-slate-700 bg-slate-900/70 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-blue-500 hover:shadow-[0_25px_60px_rgba(37,99,235,.25)]"
             >
 
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600/20 to-cyan-500/20 border border-blue-500/20">
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-blue-600/20 to-cyan-500/20 border border-blue-500/20">
 
                 <item.icon
                   size={30}

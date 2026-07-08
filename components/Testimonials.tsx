@@ -31,7 +31,7 @@ export default function Testimonials() {
 
       <div className="absolute left-0 top-20 h-96 w-96 rounded-full bg-blue-600/10 blur-[150px]" />
 
-      <div className="absolute right-0 bottom-0 h-[450px] w-[450px] rounded-full bg-cyan-500/10 blur-[170px]" />
+      <div className="absolute right-0 bottom-0 h-112.5 w-112.5 rounded-full bg-cyan-500/10 blur-[170px]" />
 
       <div className="container relative z-10">
         <div className="text-center">
@@ -41,7 +41,7 @@ export default function Testimonials() {
 
           <h2 className="mt-8 text-5xl lg:text-6xl font-black text-white">
             Loved By
-            <span className="block bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
               Growing Businesses
             </span>
           </h2>
@@ -56,7 +56,7 @@ export default function Testimonials() {
           {testimonials.map((item) => (
             <div
               key={item.name}
-              className="group relative overflow-hidden rounded-[32px] border border-slate-700 bg-slate-900/70 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-blue-500 hover:shadow-[0_20px_70px_rgba(59,130,246,.25)]"
+              className="group relative overflow-hidden rounded-4xl border border-slate-700 bg-slate-900/70 p-8 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-blue-500 hover:shadow-[0_20px_70px_rgba(59,130,246,.25)]"
             >
               <div className="absolute right-6 top-6 opacity-10">
                 <Quote size={70} className="text-blue-400" />

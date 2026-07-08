@@ -32,7 +32,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-24">
         {/* CTA */}
 
-        <div className="mb-20 rounded-[32px] border border-slate-700 bg-slate-900/70 p-10 backdrop-blur-xl lg:flex lg:items-center lg:justify-between">
+        <div className="mb-20 rounded-4xl border border-slate-700 bg-slate-900/70 p-10 backdrop-blur-xl lg:flex lg:items-center lg:justify-between">
           <div>
             <span className="rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
               Get Started
@@ -48,7 +48,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <button className="mt-8 flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 font-semibold text-white transition hover:scale-105 lg:mt-0">
+          <button className="mt-8 flex items-center gap-3 rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 px-8 py-4 font-semibold text-white transition hover:scale-105 lg:mt-0">
             Get Started
             <ArrowRight size={18} />
           </button>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-xl font-black text-white">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-r from-blue-600 to-cyan-500 text-xl font-black text-white">
                 B
               </div>
 
