@@ -1,92 +1,160 @@
+
+
+"use client";
+
+import { ArrowRight, Play, Sparkles } from "lucide-react";
+
 export default function Hero() {
   return (
-    <section className="container relative flex min-h-screen items-center pt-28">
+    <section className="relative overflow-hidden bg-[#030712] pt-40 pb-28">
 
+      {/* Background Glow */}
 
-      <div className="w-full lg:w-1/2">
+      <div className="absolute -top-40 left-0 h-[420px] w-[420px] rounded-full bg-blue-600/20 blur-[170px]" />
 
+      <div className="absolute right-0 top-20 h-[450px] w-[450px] rounded-full bg-cyan-500/15 blur-[180px]" />
 
-        <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-blue-500/30 bg-blue-500/10 px-5 py-2">
+      <div className="absolute left-1/2 bottom-0 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-[170px]" />
 
-          <div className="h-2 w-2 rounded-full bg-blue-500" />
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
+
+        {/* Badge */}
+
+        <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-5 py-2 backdrop-blur-xl">
+
+          <Sparkles className="text-blue-400" size={18} />
 
           <span className="text-sm font-medium text-blue-300">
-            Enterprise Rewards Infrastructure
+
+            Trusted by 50,000+ Businesses Worldwide
+
           </span>
 
         </div>
 
+        {/* Heading */}
 
-        <h1 className="max-w-xl text-6xl font-black leading-tight text-white">
+        <h1 className="mt-10 max-w-6xl text-5xl font-black leading-[1.05] tracking-[-2px] text-white md:text-6xl lg:text-8xl">
 
-          Power modern
+          Power modern growth
           <br />
 
-          growth with
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-sky-400 bg-clip-text text-transparent">
 
-          <span className="block bg-linear-to-r from-blue-400 via-cyan-300 to-white bg-clip-text text-transparent">
-            Loyalty
+            with Loyalty
+
           </span>
 
         </h1>
 
-    
+        {/* Paragraph */}
 
-        <p className="mt-8 max-w-lg text-lg leading-8 text-slate-400">
+        <p className="mt-8 max-w-3xl text-lg leading-9 text-slate-400 md:text-xl">
 
-          One platform for campaigns, rewards, referrals,
-          cashback and customer engagement.
-
-          Build beautiful loyalty experiences without
-          engineering complexity.
+          Streamline accounting, GST, invoicing, inventory and business
+          analytics in one modern platform built for ambitious startups
+          and growing enterprises.
 
         </p>
 
+        {/* Buttons */}
 
-        <div className="flex items-center gap-4 shrink-0">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-5">
 
-          <button className="min-w-50 h-12 px-8 rounded-xl bg-[#5B7CFF] text-white font-semibold whitespace-nowrap">
+          <button className="group rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-[0_0_45px_rgba(59,130,246,.35)] transition duration-300 hover:scale-105">
 
-           Book Instant Demo
+            <span className="flex items-center gap-3">
+
+              Start Free
+
+              <ArrowRight
+                size={20}
+                className="transition group-hover:translate-x-1"
+              />
+
+            </span>
 
           </button>
 
+          <button className="rounded-xl border border-slate-700 bg-slate-900/60 px-8 py-4 text-lg text-slate-300 backdrop-blur-xl transition hover:border-blue-500 hover:text-white">
 
-         <button className="min-w-37.5 h-12 px-8 rounded-xl text-white font-semibold whitespace-nowrap">
+            <span className="flex items-center gap-3">
 
-            Learn More
+              <Play size={18} />
+
+              Watch Demo
+
+            </span>
 
           </button>
 
         </div>
 
+        {/* Rating */}
 
+        <div className="mt-12 flex items-center gap-3">
 
-        <div className="mt-10 flex items-center gap-4">
+          <div className="flex text-yellow-400 text-xl">
 
-          <div className="flex -space-x-3">
+            ★★★★★
 
-            <div className="h-12 w-12 rounded-full border-2 border-[#050816] bg-slate-500" />
+          </div>
 
-            <div className="h-12 w-12 rounded-full border-2 border-[#050816] bg-blue-500" />
+          <span className="text-slate-400">
 
-            <div className="h-12 w-12 rounded-full border-2 border-[#050816] bg-cyan-400" />
+            4.9/5 from 12,000+ reviews
 
-            <div className="h-12 w-12 rounded-full border-2 border-[#050816] bg-indigo-400" />
+          </span>
+
+        </div>
+
+        {/* Stats */}
+
+        <div className="mt-20 grid w-full max-w-5xl gap-6 rounded-[32px] border border-slate-800 bg-slate-900/40 p-8 backdrop-blur-xl md:grid-cols-3">
+
+          <div>
+
+            <h2 className="text-5xl font-black text-white">
+
+              50K+
+
+            </h2>
+
+            <p className="mt-3 text-slate-400">
+
+              Active Businesses
+
+            </p>
 
           </div>
 
           <div>
 
-            <h4 className="font-semibold text-white">
+            <h2 className="text-5xl font-black text-white">
 
-              Trusted by 250+ clients
+              ₹250Cr+
 
-            </h4>
+            </h2>
 
-            <p className="text-sm text-slate-400">
+            <p className="mt-3 text-slate-400">
 
-              Fast growing companies worldwide
+              Transactions Managed
+
+            </p>
+
+          </div>
+
+          <div>
+
+            <h2 className="text-5xl font-black text-white">
+
+              99.99%
+
+            </h2>
+
+            <p className="mt-3 text-slate-400">
+
+              Platform Uptime
 
             </p>
 
@@ -94,97 +162,39 @@ export default function Hero() {
 
         </div>
 
-      </div>
+        {/* Trusted Companies */}
 
-      
+        {/* <div className="mt-20 w-full">
 
-      <div className="hidden w-1/2 justify-end lg:flex">
+          <p className="mb-10 text-sm uppercase tracking-[8px] text-slate-500">
 
-        <div className="relative">
+            Trusted By
 
-        
+          </p>
 
-          <div className="absolute left-1/2 top-1/2 h-\[500px\] w-\[500px\] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/20 blur-[120px]" />
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
 
-          
+            {[
+              "Microsoft",
+              "Google",
+              "Amazon",
+              "Stripe",
+              "Slack",
+              "Notion",
+            ].map((company) => (
 
-          <div className="relative w-\[480px] rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
-
-            <div className="mb-8 flex items-center justify-between">
-
-              <h3 className="text-xl font-bold">
-
-                Dashboard
-
-              </h3>
-
-              <div className="rounded-full bg-green-500 px-4 py-2 text-sm">
-
-                Live
-
+              <div
+                key={company}
+                className="rounded-2xl border border-slate-800 bg-slate-900/40 py-5 text-center text-lg font-semibold text-slate-500 transition hover:border-blue-500 hover:text-white"
+              >
+                {company}
               </div>
 
-            </div>
-
-    
-
-            <div className="flex h-56 items-end justify-between gap-3">
-
-              <div className="h-24 w-10 rounded-t-xl bg-blue-500" />
-
-              <div className="h-36 w-10 rounded-t-xl bg-cyan-400" />
-
-              <div className="h-28 w-10 rounded-t-xl bg-blue-400" />
-
-              <div className="h-44 w-10 rounded-t-xl bg-blue-600" />
-
-              <div className="h-40 w-10 rounded-t-xl bg-indigo-500" />
-
-              <div className="h-52 w-10 rounded-t-xl bg-cyan-300" />
-
-            </div>
-
-    
-
-            <div className="mt-10 grid grid-cols-2 gap-5">
-
-              <div className="rounded-2xl bg-black/30 p-5">
-
-                <p className="text-slate-400">
-
-                  Active Users
-
-                </p>
-
-                <h2 className="mt-3 text-3xl font-bold">
-
-                  10.2M
-
-                </h2>
-
-              </div>
-
-              <div className="rounded-2xl bg-black/30 p-5">
-
-                <p className="text-slate-400">
-
-                  Growth
-
-                </p>
-
-                <h2 className="mt-3 text-3xl font-bold">
-
-                  +248%
-
-                </h2>
-
-              </div>
-
-            </div>
+            ))}
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
 

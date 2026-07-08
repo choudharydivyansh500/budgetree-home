@@ -1,25 +1,19 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Budgetree",
-  description: "Loyalty Landing Page UI",
+  title: "Budget Landing",
+  description: "Modern Finance Landing Page",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
